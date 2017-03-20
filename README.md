@@ -1,18 +1,16 @@
 CASE STUDY: 
-EuroMillions system bets
+System bet
  
 Consider EuroMillions lottery rules, where in a normal EuroMillions ticket
-field the customer can select 5 out of 50 numbers and 2 out of 12 "star"-numbers
-(see http://www.tipp24.com/euromillions).
+field the customer can select 5 out of 50 numbers and 2 out of 12 "star"-numbers.
 In a EuroMillions system ticket field the customer can select up to 10
 out of 50 numbers and up to 5 out of 12 "star"-numbers leading to up to 2520 
-field combinations (see http://www.tipp24.com/euromillions/systemschein/).
+field combinations.
  
 Your first task is to design a data structure to model a ticket that can contain
 EuroMillions normal fields as well as system ticket fields.
--------------------------------------------------------------------------------
- 
-1. Given a EuroMillions system ticket, implement the system expansion
+
+1. Given a system ticket, implement the system expansion
 that outputs all possible normal ticket field combinations
 (i.e. out of a system ticket field with numbers 1,2,3,4,5
 and with star numbers 1,2,3 it produces [1,2,3,4,5 1,2], [1,2,3,4,5 1,3]
@@ -21,9 +19,8 @@ and [1,2,3,4,5 2,3]).
 2. Your second task is to write a small application that reads the numbers
 of a system ticket from a file and outputs all the normal ticket
 combinations. Use the data structure you designed in the first task.
--------------------------------------------------------------------------------
  
-Consider following EuroMillions prize levels:
+Consider following prize levels:
  
 Winning class 1                 5 correct numbers + 2 correct star numbers
 Winning class 2                 5 correct numbers + 1 correct star number
@@ -39,7 +36,7 @@ Winning class 11                1 correct number  + 2 correct star numbers
 Winning class 12                2 correct numbers + 1 correct star number
 Winning class 13                2 correct numbers
  
-Implement a EuroMillions winning calculation that, given the draw results
+Implement a winning calculation that, given the draw results
 and a set of tickets participating in the draw, outputs the information about
 number of winning tickets in each winning class for the set of input tickets.
  
