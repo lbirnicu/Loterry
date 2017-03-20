@@ -4,7 +4,7 @@ import model.{Draw, Ticket, WinningClass}
 
 object Operations {
   /**
-    * Computes the ticket count for matched winning classed, given a draw and list of tickets.
+    * Computes the ticket count for matched winning classes, given a draw and list of tickets.
     * (this function represents the recursive version of the `ticketsMatchItr`)
     *
     * @param draw a [[Draw]] against which the tickets are matched
