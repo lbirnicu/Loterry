@@ -1,13 +1,11 @@
-??? It is actually 12 stars
-
 CASE STUDY: 
 EuroMillions system bets
  
 Consider EuroMillions lottery rules, where in a normal EuroMillions ticket
-field the customer can select 5 out of 50 numbers and 2 out of 11 "star"-numbers
+field the customer can select 5 out of 50 numbers and 2 out of 12 "star"-numbers
 (see http://www.tipp24.com/euromillions).
 In a EuroMillions system ticket field the customer can select up to 10
-out of 50 numbers and up to 5 out of 11 "star"-numbers leading to up to 2520  //12
+out of 50 numbers and up to 5 out of 12 "star"-numbers leading to up to 2520 
 field combinations (see http://www.tipp24.com/euromillions/systemschein/).
  
 Your first task is to design a data structure to model a ticket that can contain
@@ -47,28 +45,13 @@ number of winning tickets in each winning class for the set of input tickets.
  
 3. Your third task is to extend the application from the second task so that:
 * it reads the winning numbers of a draw (5 out of 50
-and 2 out of 11) from a file
+and 2 out of 12) from a file
 * it reads tickets that participated in the draw from a file
 on the file system (you are free to use any format you like).
 The file should contain normal as well as system tickets, so that
 you can use the system ticket expansion.
 * it outputs an overview about winnings for the draw in a form
 Winning class N - number of winning tickets X
-
-
-
-Tests on the max input: 1,2,3,4,5,6,7,8,9,10:1,2,3,4,5 (draws):
-1.  11,12,13,14,15:6,7
-  No winnings.
-  
-2.  9,10,11,12,13:6,7
-  WinningClass13 -> 560
-  
-3.  9,10,11,12,13:5,6
-  WinningClass13 ->336
-  WinningClass12 ->224
-4.  9,10,11,12,13:5,4
-  WinningClass8 -> 56, WinningClass11 -> 140, WinningClass13 -> 168, WinningClass12 -> 336
   
 
 
